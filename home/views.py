@@ -2,7 +2,7 @@ import re
 from django.shortcuts import redirect, render
 from .models import data
 # Create your views here.
-def home(request,):
+def home(request):
     if request.method == "POST":
         date = request.POST['date']
         title = request.POST['title']
