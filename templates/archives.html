@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            padding: 50px 30px;
+            border: 1px solid aliceblue;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 9px;
+            background-color: rgba(184, 212, 237, 0.529);
+            box-shadow: 8px 9px 20px 0px #d1d1e4;
+
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(6, 175, 247);
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    {%for i in archives%}
+
+    <div class="item">
+        <a href="p/{{i.id}}">{{i.title}}</a>
+    </div>
+
+    {%endfor%}
+
+
+</body>
+</html>

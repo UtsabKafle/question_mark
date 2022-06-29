@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            height: 40px;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+            width: 70%;
+            border:none;
+            border-bottom: 2px solid rgb(5, 216, 132);
+            margin: 25px;
+            outline: none;
+            color:#413f3fde;
+        }
+
+        .content{
+            height: 100vh;
+            width: 90%;
+            margin: 15px;
+            border: none;
+            border-right:1px solid rgba(211, 201, 211, 0.536);
+            padding: 10px;
+            outline: none;
+            color: grey;
+            /* font-weight: 700; */
+            font-size: large;
+        }
+        .upper{
+            display: inline;
+        }
+        .btn{
+            background-color: white;
+            width: 90px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            float: right;
+            cursor: pointer;
+            border: 1px solid green;
+            font-weight: 700;
+            font-family:  'Courier New', Courier, monospace;
+        }
+        .btn:hover{
+            background-color: rgb(5, 216, 132);
+            border: 1px solid rgb(5, 216, 132);
+            color: white;
+            font-weight: 700;
+        }
+        .date{
+            border: none;
+            outline:none;
+            border-bottom: 1px solid grey;
+        }
+
+    </style>
+</head>
+<body>
+<div class="upper-right">
+<form method="post">{%csrf_token%}
+
+  <input type="date" name="date"class="date">
+    <button class="btn" type="submit" name="bt">Done</button>
+</div>
+<input type="text" name="title"class="title">
+
+    <textarea class="content" name="content"></textarea>
+
+</form>
+
+</body>
+</html>
